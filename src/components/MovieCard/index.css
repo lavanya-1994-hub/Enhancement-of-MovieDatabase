@@ -1,0 +1,25 @@
+.movie-card-container {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.movie-card-image {
+  width: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  align-self: center;
+}
+.movie-title {
+  color: red;
+  font-family: 'Sans-serif';
+}
+.movie-title-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.view-details {
+  align-self: center;
+  margin-top: auto;
+}
