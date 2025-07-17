@@ -26,9 +26,9 @@ class TopRated extends React.Component {
     })),
   })
 
-  getTopRatedMovieResponse = async () => {
+  getTopRatedMovieResponse = async (page = 1) => {
     const API_KEY = 'e384a3641efca8f4ae54f7cdaf8bc1a3'
-    const apiUrl = `https://api.themoviedb.org/3/movie/top_rated?api_key=${API_KEY}&language=en-US&page=1`
+    const apiUrl = `https://api.themoviedb.org/3/movie/top_rated?api_key=${API_KEY}&language=en-US&page=${page}`
     const response = await fetch(apiUrl)
     const data = await response.json()
     const updatedData = this.getUpdatedData(data)
